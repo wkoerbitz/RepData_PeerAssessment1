@@ -59,6 +59,7 @@ The **maximum** number of steps is in the **interval `r max_interval`** with an 
 number_missing <- sum(is.na(data$steps))
 ```
 There are **`r number_missing` missing values** in the data set.
+The **missing Values** are imputed by the **mean**.
 ```{r, echo = TRUE, fig.height=4, fig.width=8}
 missing_dat <- data %>%
                  group_by(interval) %>%

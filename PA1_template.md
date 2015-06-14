@@ -70,6 +70,7 @@ The **maximum** number of steps is in the **interval 835** with an **average** o
 number_missing <- sum(is.na(data$steps))
 ```
 There are **2304 missing values** in the data set.
+The **missing Values** are imputed by the **mean**.
 
 ```r
 missing_dat <- data %>%
